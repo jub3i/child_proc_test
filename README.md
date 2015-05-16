@@ -3,6 +3,7 @@
 Test a race condition beteween exit and close events on the stdout stream
 
 install:
+
 `$ npm install`
 
 run once:
