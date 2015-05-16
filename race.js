@@ -4,7 +4,7 @@ var once = require('once');
 
 // INSTRUCTIONS: try `total` values of 1, 2, 3, 4, 5, 10, 100, 1000
 // IMPORTANT: run this program *a view times* for each value of `total`
-var total = 1;
+var total = parseInt(process.argv[2]) || 1;
 var count = 0;
 
 var failed = 0;
