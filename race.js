@@ -2,9 +2,9 @@ var childProcess = require('child_process');
 var spawn = childProcess.spawn;
 var once = require('once');
 
-//INSTRUCTIONS: try total values of 1, 2, 3, 4, 5, 10, 100, 1000
-//IMPORTANT: run this program *a view times* for each value of `total`
-var total = 5;
+// INSTRUCTIONS: try `total` values of 1, 2, 3, 4, 5, 10, 100, 1000
+// IMPORTANT: run this program *a view times* for each value of `total`
+var total = 1;
 var count = 0;
 
 var failed = 0;
@@ -12,7 +12,7 @@ var success = 0;
 
 var debug = true;
 
-//simple async counter to display results of tests once they are all done
+// simple async counter to display results of tests once they are all done
 var counter = function(allData) {
   if (debug) {
     console.log(count + ': ' + allData.slice(0, 5) + '...');
